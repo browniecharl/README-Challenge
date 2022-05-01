@@ -66,15 +66,24 @@ const questions = [
                 'MIT',
                 'BSD 3-Clause',
                 'GPL 3.0',
-                'GPL 2.0'
-            ]
+                'GPL 2.0',
+                'N/A'
+            ],
+            validate: licenseInput => {
+                if (licenseInput) {
+                    return true;
+                }else{
+                    console.log('Please select a license.')
+                    return false;
+                }
+            }
 
         },
         {
             type: 'input',
             name: 'installation',
             message: 'What command is needed to install app dependencies?',
-            default: 'npm i'
+            default: 'npm i',
         },
         {
             type: 'input',
@@ -90,7 +99,7 @@ const questions = [
         {
             type: 'input',
             name: 'contribute',
-            message: 'Let user know if you are open to contributions and how to submit them'
+            message: 'Let user know if you are open to contributions and how to submit them.'
         },
     ]
 
@@ -109,7 +118,7 @@ function init() {
     inquirer.prompt(questions)
     .then (userInput => {
         console.log(userInput)
-        
+
     })
 }
 
