@@ -67,7 +67,6 @@ const questions = [
                 'BSD 3-Clause',
                 'GPL 3.0',
                 'GPL 2.0'
-
             ]
 
         },
@@ -96,10 +95,23 @@ const questions = [
     ]
 
     // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('You have successfully created your README file')
+    });
+};
 
 // TODO: Create a function to initialize app
-function init()
+function init() {
+    inquirer.prompt(questions)
+    .then (userInput => {
+        console.log(userInput)
+        
+    })
+}
 
 // Function call to initialize app
 init();
