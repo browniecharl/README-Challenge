@@ -4,17 +4,18 @@ const inquirer = require('inquirer');
 const index = require('../index.js')
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseBadge = '';
+  let licenseBadge = ('');
+
   if (license === 'Mozilla') {
-    licenseBadge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+    licenseBadge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
   }else if (license === 'GNU v3') {
-    licenseBadge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+    licenseBadge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)'
   }else if (license === 'Apache 2.0') {
-    licenseBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    licenseBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
   }else if (license === 'MIT') {
-    licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
   }else if (license === 'IBM') {
-    licenseBadge = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+    licenseBadge = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)'
   }else {
     licenseBadge = ''
   }
@@ -26,15 +27,15 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   let licenseLink = '';
   if (license === 'Mozilla') {
-    licenseLink = 'https://opensource.org/licenses/MPL-2.0'
+    licenseLink = 'https://www.mozilla.org/en-US/MPL/2.0/'
   }else if (license === 'GNU v3') {
-    license = 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'
+    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
   }else if (license === 'Apache 2.0') {
-    license = 'https://opensource.org/licenses/Apache-2.0'
+    licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0'
   }else if (license === 'MIT') {
-    license = 'https://opensource.org/licenses/MIT'
+    licenseLink = 'https://opensource.org/licenses/MIT'
   }else if (license === 'IBM') {
-    license = 'https://opensource.org/licenses/IPL-1.0'
+    license = 'https://www-40.ibm.com/software/sla/sladb.nsf'
   }else{
     licenseLink = ''
   }
@@ -49,7 +50,7 @@ function renderLicenseSection(license) {
     licenseSection = ''
   }else {
     licenseSection = 
-    `License: ${license}`
+    `${license}`
   }
   return licenseSection;
 }
@@ -58,22 +59,53 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
-### ${renderLicenseLink(data.license)}
+${renderLicenseBadge(data.license)}
+## ${renderLicenseSection(data.license)}
+###### ${renderLicenseLink(data.license)}
+
+## Description:
+---------------
+### ${data.description}
 
 ## Table of Contents:
 ### * [Installation](#installation)
 ### * [Usage](#usage)
-### * [License](#license)
-### * [Contributions](#contributions)
+### * [Credits](#credits)
+### * [Contribute](#contribute)
 ### * [Tests](#tests)
 ### * [Questions](#questions)
 
 ## Installation:
-### You must run the following command for this README generator to function.
-### ${data.installation}
+----------------
+#### ${data.installation}
+
+## Usage: 
+---------
+#### ${data.usage}
+
+## Credits:
+-----------
+#### ${data.credits}
+
+
+## How to Contribute:
+---------------------
+#### ${data.contribute}
+
+## Tests:
+---------
+#### ${data.test}
+
+## Questions:
+--------------
+### For any questions or comments I can be reached at:
+#### GitHub: http://www.github.com/${data.username} 
+#### Email: ${data.email}
+
+
 
 `;
 }
+
 
 module.exports = generateMarkdown;
