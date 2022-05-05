@@ -34,7 +34,7 @@ const questions = [
         type: 'input',
         name: 'installation',
         message: 'List any commands needed to install dependencies',
-        default: 'You will need to run "npm install" in the terminal to install necessary modules.',
+        default: '"npm init" "npm install inquirer"',
     },
     {
         type: 'input',

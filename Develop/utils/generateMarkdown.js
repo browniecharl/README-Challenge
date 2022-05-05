@@ -52,7 +52,7 @@ function generateMarkdown(data) {
   ![badge](https://img.shields.io/badge/license-${data.license}-blue)
 
 ## Description:
-### ${data.description}
+${data.description}
 
 
 ## Table of Contents:
@@ -65,27 +65,27 @@ function generateMarkdown(data) {
 ### * [Questions](#questions)
 
 ## Installation:
-#### ${data.installation}
+${data.installation}
 
 ## Usage: 
-#### ${data.usage}
+${data.usage}
 
 ## Credits:
-#### ${data.credits}
+${data.credits}
 
 ## ${renderLicenseSection(data.license)}
-###### ${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
 ## Contribute:
-#### ${data.contribute}
+${data.contribute}
 
 ## Tests:
-#### ${data.test}
+${data.test}
 
 ## Questions:
 ### For any questions or comments I can be reached at:
-#### GitHub: http://www.github.com/${data.username} 
-#### Email: ${data.email}
+GitHub: http://www.github.com/${data.username} 
+Email: ${data.email}
 `;
 }
 
