@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
         {
@@ -56,17 +57,15 @@ const questions = [
             }
         },
         {
-            type: 'list',
+            type: 'checkbox',
             name: 'license',
             message: 'What license does your project have?',
             choices: [
-                'Mozilla Public License',
+                'Mozilla',
                 'GNU v3',
                 'Apache 2.0',
                 'MIT',
-                'BSD 3-Clause',
-                'GPL 3.0',
-                'GPL 2.0',
+                'IBM',
                 'N/A'
             ],
             validate: licenseInput => {
@@ -118,9 +117,9 @@ function init() {
     inquirer.prompt(questions)
     .then (userInput => {
         console.log(userInput)
-
-    })
-}
+        writeToFile('README.md', generateMarkdown(userInput));
+    });
+};
 
 // Function call to initialize app
 init();
