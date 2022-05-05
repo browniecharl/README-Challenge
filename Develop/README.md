@@ -1,14 +1,11 @@
-# NONE
-
-![badge](https://img.shields.io/badge/license-Mozilla-blue)
-## Mozilla
-###### https://www.mozilla.org/en-US/MPL/2.0/
+# TURTLE MAN
 
 ## Description:
----------------
-### NONE
+### THIS IS JUST AN APP TO HELP GENERATE A README FILE FROM THE COMMAND TERMINAL USING NODE
+
 
 ## Table of Contents:
+---------------------
 ### * [Installation](#installation)
 ### * [Usage](#usage)
 ### * [Credits](#credits)
@@ -17,31 +14,25 @@
 ### * [Questions](#questions)
 
 ## Installation:
-----------------
-#### NONE
+#### You will need to run "npm install" in the terminal to install necessary modules.
 
 ## Usage: 
----------
-#### NONE
+#### CLONE REPO, INSTALL DEPENDENCIES, RUN SCRIPT
 
 ## Credits:
------------
-#### NONE
+#### NONE FOR THIS PROJECT
 
+## License: IBM
+![badge](https://img.shields.io/badge/license-IBM-blue)
+###### 
 
 ## How to Contribute:
----------------------
-#### NONE
+#### I AM NOT AT THIS TIME, PROJECT IS COMPLETE
 
 ## Tests:
----------
-#### NONE
+#### npm run test
 
 ## Questions:
---------------
 ### For any questions or comments I can be reached at:
-#### GitHub: http://www.github.com/NONE 
-#### Email: NONE
-
-
-
+#### GitHub: http://www.github.com/BROWNIECHARL 
+#### Email: BROWNIECHARL@GMAIL.COM

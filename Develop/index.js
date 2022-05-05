@@ -20,7 +20,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a description of your project',
+        message: 'Enter a short description of your project',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
@@ -33,8 +33,8 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What command is needed to install app dependencies?',
-        default: 'You will need to run "npm installer" in the terminal to download necessary modules.',
+        message: 'List any commands needed to install dependencies',
+        default: 'You will need to run "npm install" in the terminal to install necessary modules.',
     },
     {
         type: 'input',
@@ -52,8 +52,8 @@ const questions = [
         message: 'What license does your project use?',
         choices: [
             'Mozilla',
-            'GNU v3',
-            'Apache 2.0',
+            'GNU',
+            'Apache_2.0',
             'MIT',
             'IBM',
             'NONE'
@@ -71,13 +71,13 @@ const questions = [
     {
         type: 'input',
         name: 'contribute',
-        message: 'Let user know if you are open to contributions and how to submit them.'
+        message: 'Inform viewer whether or not you are open to contributions and how to submit them.'
     },
     {
         type: 'input',
         name: 'test',
         message: 'What command is needed to run tests?',
-        default: 'To perform tests, run "npm run test" in the terminal. '
+        default: 'npm run test'
     },
         {
             type: 'input',
@@ -105,15 +105,6 @@ const questions = [
                 }
             }
         },
-       
-        
-        
-        
-        
-        
-        
-        
-        
     ]
 
     // TODO: Create a function to write README file

@@ -13,31 +13,15 @@ function renderLicenseBadge(license) {
   return licenseBadge;
 }
 
-//   if (license === $) {
-//     licenseBadge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
-//   }else if (license === 'GNU v3') {
-//     licenseBadge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)'
-//   }else if (license === 'Apache 2.0') {
-//     licenseBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
-//   }else if (license === 'MIT') {
-//     licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
-//   }else if (license === 'IBM') {
-//     licenseBadge = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)'
-//   }else {
-//     licenseBadge = ''
-//   }
-//   return licenseBadge;
-// }
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = '';
   if (license === 'Mozilla') {
     licenseLink = 'https://www.mozilla.org/en-US/MPL/2.0/'
-  }else if (license === 'GNU v3') {
+  }else if (license === 'GNU') {
     licenseLink = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
-  }else if (license === 'Apache 2.0') {
+  }else if (license === 'Apache_2.0') {
     licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0'
   }else if (license === 'MIT') {
     licenseLink = 'https://opensource.org/licenses/MIT'
@@ -53,11 +37,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = ''
-  if (license === 'None') {
+  if (license === 'NONE') {
     licenseSection = ''
   }else {
     licenseSection = 
-    `${license}`
+    `License: ${license}`
   }
   return licenseSection;
 }
@@ -66,15 +50,12 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-![badge](https://img.shields.io/badge/license-${data.license}-blue)
-## ${renderLicenseSection(data.license)}
-###### ${renderLicenseLink(data.license)}
-
 ## Description:
----------------
 ### ${data.description}
 
+
 ## Table of Contents:
+---------------------
 ### * [Installation](#installation)
 ### * [Usage](#usage)
 ### * [Credits](#credits)
@@ -83,34 +64,28 @@ function generateMarkdown(data) {
 ### * [Questions](#questions)
 
 ## Installation:
-----------------
 #### ${data.installation}
 
 ## Usage: 
----------
 #### ${data.usage}
 
 ## Credits:
------------
 #### ${data.credits}
 
+## ${renderLicenseSection(data.license)}
+![badge](https://img.shields.io/badge/license-${data.license}-blue)
+###### ${renderLicenseLink(data.license)}
 
 ## How to Contribute:
----------------------
 #### ${data.contribute}
 
 ## Tests:
----------
 #### ${data.test}
 
 ## Questions:
---------------
 ### For any questions or comments I can be reached at:
 #### GitHub: http://www.github.com/${data.username} 
 #### Email: ${data.email}
-
-
-
 `;
 }
 
