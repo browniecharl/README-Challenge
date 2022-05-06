@@ -76,8 +76,8 @@ ${data.test}
 
 ## Questions:
 ### For any questions or comments I can be reached at:
-GitHub: http://www.github.com/${data.username} 
-Email: ${data.email}
+#### GitHub: http://www.github.com/${data.username} 
+#### Email: ${data.email}
 `;
 }
 

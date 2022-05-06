@@ -1,8 +1,8 @@
-# TURTLE MAN
-![badge](https://img.shields.io/badge/license-MIT-blue)
+# TURTLE MANTURTLE MAN
+![badge](https://img.shields.io/badge/license-Mozilla-blue)
 
 ## Description:
-TURTLE MAN
+marcus
 
 
 ## Table of Contents:
@@ -18,21 +18,21 @@ TURTLE MAN
 "npm init" "npm install inquirer"
 
 ## Usage: 
-TURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MAN
+marcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcus
 
 ## Credits:
-TURTLE MANTURTLE MANTURTLE MANTURTLE MAN
+marcusmarcusmarcusv
 
-## License: MIT
-https://opensource.org/licences/MIT
+## License: Mozilla
+https://opensource.org/licences/Mozilla
 
 ## Contribute:
-TURTLE MANTURTLE MANTURTLE MANTURTLE MAN
+marcusmarcusmarcus
 
 ## Tests:
 npm run test
 
 ## Questions:
 ### For any questions or comments I can be reached at:
-GitHub: http://www.github.com/TURTLE MANTURTLE MAN 
-Email: TURTLE MANTURTLE MAN
+#### GitHub: http://www.github.com/marcus 
+#### Email: marcusmarcus
