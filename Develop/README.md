@@ -1,8 +1,8 @@
-# Professional README Generator
-  ![badge](https://img.shields.io/badge/license-Mozilla-blue)
+# TURTLE MAN
+![badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description:
-This application will help in creating a professional README file based on questions answered in the command line using Node.js.
+TURTLE MAN
 
 
 ## Table of Contents:
@@ -18,21 +18,21 @@ This application will help in creating a professional README file based on quest
 "npm init" "npm install inquirer"
 
 ## Usage: 
-Make sure [Node.js](https://nodejs.org/en/download/) is  installed on machine
+TURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MANTURTLE MAN
 
 ## Credits:
-NONE
+TURTLE MANTURTLE MANTURTLE MANTURTLE MAN
 
-## License: Mozilla
-https://www.mozilla.org/en-US/MPL/2.0/
+## License: MIT
+https://opensource.org/licences/MIT
 
 ## Contribute:
-Project has been completed!
+TURTLE MANTURTLE MANTURTLE MANTURTLE MAN
 
 ## Tests:
 npm run test
 
 ## Questions:
 ### For any questions or comments I can be reached at:
-GitHub: http://www.github.com/browniecharl 
-Email: browniecharl@gmail.com
+GitHub: http://www.github.com/TURTLE MANTURTLE MAN 
+Email: TURTLE MANTURTLE MAN

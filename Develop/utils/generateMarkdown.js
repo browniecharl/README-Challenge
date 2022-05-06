@@ -5,10 +5,10 @@ const index = require('../index.js')
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let licenseBadge = '';
-  if (license = license) {
+  if (license === 'NONE') {
     licenseBadge = ''
   }else{
-    licenseBadge = ''
+    licenseBadge = `![badge](https://img.shields.io/badge/license-${license}-blue)`
   }
   return licenseBadge;
 }
@@ -17,18 +17,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = '';
-  if (license === 'Mozilla') {
-    licenseLink = 'https://www.mozilla.org/en-US/MPL/2.0/'
-  }else if (license === 'GNU') {
-    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
-  }else if (license === 'Apache_2.0') {
-    licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0'
-  }else if (license === 'MIT') {
-    licenseLink = 'https://opensource.org/licenses/MIT'
-  }else if (license === 'IBM') {
-    license = 'https://www-40.ibm.com/software/sla/sladb.nsf'
-  }else{
+  if (license === 'NONE') {
     licenseLink = ''
+  }else{
+    licenseLink = `https://opensource.org/licences/${license}`
   }
   return licenseLink;
 }
@@ -49,7 +41,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ![badge](https://img.shields.io/badge/license-${data.license}-blue)
+${renderLicenseBadge(data.license)}
 
 ## Description:
 ${data.description}

@@ -52,7 +52,6 @@ const questions = [
         message: 'What license does your project use?',
         choices: [
             'Mozilla',
-            'GNU',
             'Apache_2.0',
             'MIT',
             'IBM',
@@ -71,7 +70,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribute',
-        message: 'Inform viewer whether or not you are open to contributions and how to submit them.'
+        message: 'Inform user whether or not you are open to contributions and how to submit them.'
     },
     {
         type: 'input',
