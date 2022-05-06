@@ -1,8 +1,8 @@
-# TURTLE MANTURTLE MAN
-![badge](https://img.shields.io/badge/license-Mozilla-blue)
+# How To Become A Turtle
+![badge](https://img.shields.io/badge/license-Apache_2.0-blue)
 
 ## Description:
-marcus
+In this project I will teach you how to become a turtle. Not any regular turtle... a fast one
 
 
 ## Table of Contents:
@@ -18,21 +18,21 @@ marcus
 "npm init" "npm install inquirer"
 
 ## Usage: 
-marcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcusmarcus
+Just watch the video, im sure it will all make sense
 
 ## Credits:
-marcusmarcusmarcusv
+There are none... I did it all by myself
 
-## License: Mozilla
-https://opensource.org/licences/Mozilla
+## License: Apache_2.0
+https://opensource.org/licences/Apache_2.0
 
 ## Contribute:
-marcusmarcusmarcus
+I am not open to any contributions at this time
 
 ## Tests:
 npm run test
 
 ## Questions:
 ### For any questions or comments I can be reached at:
-#### GitHub: http://www.github.com/marcus 
-#### Email: marcusmarcus
+#### GitHub: http://www.github.com/browniecharl 
+#### Email: browniecharl@gmail.com
